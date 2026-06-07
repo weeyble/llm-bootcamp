@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weeyble LLM bootcamp</title>
+    <meta
+      name="description"
+      content="AI駆動開発 / LLM もくもく会の初参加者向けガイド。Claude Code、Codex、バイブコーディング、AI駆動開発、MCPをやさしく紹介します。"
+    >
+    <meta property="og:title" content="Weeyble LLM bootcamp">
+    <meta
+      property="og:description"
+      content="AI駆動開発 / LLM もくもく会の初参加者向けガイド。"
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/hero-llm-bootcamp.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Weeyble LLM bootcamp トップへ">
+        <span class="brand-mark">W</span>
+        <span>Weeyble LLM bootcamp</span>
+      </a>
+      <nav class="nav" aria-label="ページ内ナビゲーション">
+        <a href="#tools">Claude Code / Codex</a>
+        <a href="#vibe">バイブコーディング</a>
+        <a href="#ai-driven">AI駆動開発</a>
+        <a href="#mcp">MCP</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">AI駆動開発 / LLM もくもく会</p>
+          <h1 id="hero-title">Weeyble LLM bootcamp</h1>
+          <p class="lead">
+            Claude Code や Codex を使って、LLM と一緒に小さなアプリを作るための初参加者向けガイドです。
+            知識ゼロからでも、会場で相談しながら進められます。
+          </p>
+          <div class="hero-actions" role="group" aria-label="主要リンク">
+            <a class="button primary" href="#start">はじめに読む</a>
+            <a class="button secondary" href="#tetris">テトリスを作ってみる</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/hero-llm-bootcamp.png" alt="">
+        </div>
+      </section>
+
+      <section id="start" class="intro section">
+        <div>
+          <p class="section-kicker">For first timers</p>
+          <h2>初参加・初心者大歓迎です</h2>
+        </div>
+        <div class="intro-text">
+          <p>
+            このページは、はじめて「AI駆動開発 / LLM もくもく会」に参加する人のための入口です。
+            まずは用語をざっくり理解し、次に実際の開発タスクを LLM と一緒に進めてみます。
+          </p>
+          <p>
+            うまくプロンプトを書けなくても問題ありません。大事なのは、LLM に丸投げすることではなく、
+            目的を伝え、出てきた案を読み、試し、直していく開発のリズムを体験することです。
+          </p>
+        </div>
+      </section>
+
+      <section class="section agenda" aria-labelledby="agenda-title">
+        <div class="section-heading">
+          <p class="section-kicker">Bootcamp map</p>
+          <h2 id="agenda-title">今日の流れ</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3>LLM 開発ツールを知る</h3>
+            <p>Claude Code / Codex と ChatGPT の違いを押さえます。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>小さく作る</h3>
+            <p>バイブコーディングでテトリス風ゲームを作ってみます。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>開発プロセスに使う</h3>
+            <p>競合分析、要件定義、実装、検証まで LLM を使います。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>拡張の考え方を知る</h3>
+            <p>MCP で外部ツールやデータとつなぐ考え方を学びます。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="tools" class="section split" aria-labelledby="tools-title">
+        <div class="section-heading">
+          <p class="section-kicker">Tools</p>
+          <h2 id="tools-title">Claude Code / Codex とは</h2>
+        </div>
+        <div class="content-grid">
+          <article class="panel">
+            <h3>開発作業を一緒に進める AI エージェント</h3>
+            <p>
+              Claude Code や Codex は、コードを読む、ファイルを編集する、テストを実行する、エラーを調べる、
+              修正方針を立てるといった開発作業を、プロジェクトの中で進めるためのツールです。
+            </p>
+          </article>
+          <article class="panel accent">
+            <h3>ChatGPT と何が違うのか</h3>
+            <p>
+              ChatGPT は会話で相談する場面に強い一方、開発エージェントは手元のリポジトリを見ながら作業できます。
+              「説明を聞く」だけでなく、「実際に直す」「動作確認する」まで近い距離で扱えるのが違いです。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="vibe" class="section feature" aria-labelledby="vibe-title">
+        <div class="feature-copy">
+          <p class="section-kicker">Vibe coding</p>
+          <h2 id="vibe-title">バイブコーディングとは？</h2>
+          <p>
+            作りたいものの雰囲気や目的を LLM に伝え、提案されたコードを動かしながら、
+            会話と修正を重ねて形にしていく開発スタイルです。
+          </p>
+          <p>
+            最初から完璧な設計を目指すより、まず動くものを作り、触って、気づいた違和感を LLM に伝えます。
+            初心者でも「作って試す」サイクルに入りやすいのが特徴です。
+          </p>
+        </div>
+        <section class="prompt-card" aria-label="プロンプト例">
+          <p class="prompt-label">Prompt example</p>
+          <pre><code>HTML/CSS/JavaScript だけで動く
+シンプルなテトリス風ゲームを作って。
+
+初心者が読みやすい構成にして、
+ブラウザでそのまま開けるようにして。</code></pre>
+        </section>
+      </section>
+
+      <section id="tetris" class="section tetris" aria-labelledby="tetris-title">
+        <div class="section-heading">
+          <p class="section-kicker">Hands-on</p>
+          <h2 id="tetris-title">テトリスを作ってみよう</h2>
+        </div>
+        <div class="practice-layout">
+          <div class="board-preview" aria-hidden="true">
+            <div class="block cyan"></div>
+            <div class="block cyan"></div>
+            <div class="block cyan"></div>
+            <div class="block cyan"></div>
+            <div class="block red"></div>
+            <div class="block red"></div>
+            <div class="block yellow"></div>
+            <div class="block yellow"></div>
+            <div class="block green"></div>
+            <div class="block green"></div>
+            <div class="block purple"></div>
+            <div class="block purple"></div>
+          </div>
+          <div class="checklist">
+            <article>
+              <h3>1. まず作る</h3>
+              <p>「ブラウザで動くテトリス風ゲーム」を LLM に依頼します。</p>
+            </article>
+            <article>
+              <h3>2. 動かす</h3>
+              <p>表示、操作、落下、消去、ゲームオーバーが動くか確認します。</p>
+            </article>
+            <article>
+              <h3>3. 直す</h3>
+              <p>バグや遊びにくさを具体的に伝えて、差分で直してもらいます。</p>
+            </article>
+            <article>
+              <h3>4. 仕上げる</h3>
+              <p>スコア、次のブロック、リスタート、スマホ操作などを追加します。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ai-driven" class="section" aria-labelledby="ai-driven-title">
+        <div class="section-heading narrow">
+          <p class="section-kicker">AI driven development</p>
+          <h2 id="ai-driven-title">AI駆動開発とは</h2>
+          <p>
+            AI駆動開発は、コードを書く瞬間だけでなく、調査、設計、実装、レビュー、検証まで、
+            開発プロセス全体に LLM を組み込む考え方です。
+          </p>
+        </div>
+        <div class="workflow">
+          <article>
+            <h3>競合分析・要件定義をしてみよう</h3>
+            <p>
+              作りたいアプリに近いサービスを調べ、ユーザー、課題、必要な機能、最初に作る範囲を整理します。
+              LLM には「比較表」「想定ユーザー」「MVP の要件」を出してもらうと始めやすいです。
+            </p>
+          </article>
+          <article>
+            <h3>実装してみよう</h3>
+            <p>
+              要件を小さなタスクに分け、1つずつ実装します。LLM には作業前に方針を説明してもらい、
+              変更後は実行結果やエラーを渡して次の修正につなげます。
+            </p>
+          </article>
+          <article>
+            <h3>レビューして改善しよう</h3>
+            <p>
+              動いたら終わりではなく、読みやすさ、アクセシビリティ、エラー処理、テスト観点を確認します。
+              「初心者にも説明できるか」を基準にすると理解が深まります。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="mcp" class="section mcp" aria-labelledby="mcp-title">
+        <div class="mcp-copy">
+          <p class="section-kicker">MCP</p>
+          <h2 id="mcp-title">MCPとは？</h2>
+          <p>
+            MCP は Model Context Protocol の略で、LLM アプリや開発エージェントが外部ツール、
+            データ、サービスとつながるための共通インターフェースです。
+          </p>
+          <p>
+            たとえば、ブラウザ操作、データベース、ドキュメント、GitHub、社内ツールなどを
+            LLM から扱えるようにすると、単なるチャットではなく、実作業に近い支援ができます。
+          </p>
+        </div>
+        <div class="connection-map" aria-hidden="true">
+          <span>LLM</span>
+          <i></i>
+          <span>MCP</span>
+          <i></i>
+          <span>Tools</span>
+        </div>
+      </section>
+
+      <section class="section closing" aria-labelledby="closing-title">
+        <p class="section-kicker">Next action</p>
+        <h2 id="closing-title">今日やることを1つ決めよう</h2>
+        <p>
+          テトリス、TODO アプリ、勉強会告知ページ、競合分析メモなど、小さく完成させられるテーマを選びます。
+          迷ったら「ブラウザだけで動くもの」から始めるのがおすすめです。
+        </p>
+        <a class="button primary" href="#tools">最初の説明に戻る</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Weeyble LLM bootcamp / AI駆動開発・LLM もくもく会</p>
+    </footer>
+  </body>
+</html>
