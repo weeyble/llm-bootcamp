@@ -1,0 +1,19 @@
+﻿# OS / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node / Astro
+node_modules/
+web/dist/
+web/.astro/
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+override.tf
+override.tf.json
