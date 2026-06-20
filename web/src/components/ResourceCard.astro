@@ -1,0 +1,30 @@
+---
+interface Props {
+    href: string;
+    img: string;
+    alt: string;
+    category: string;
+    title: string;
+}
+
+const {href, img, alt, category, title } = Astro.props;
+---
+<a
+class="resource-card"
+href={href}
+target="_blank"
+rel="noopener"
+>
+<img
+    src={img}
+    alt={alt}
+    width="1672"
+    height="941"
+    loading="lazy"
+>
+<div>
+    <p>{category}</p>
+    <h3>{title}</h3>
+    <span>記事を読む</span>
+</div>
+</a>
