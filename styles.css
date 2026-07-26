@@ -464,8 +464,9 @@ code {
 
 .resource-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  aspect-ratio: 2.1 / 1;
+  object-fit: contain;
+  background: #f2f5f3;
   border-bottom: 1px solid var(--line);
 }
 
@@ -663,6 +664,86 @@ code {
   stroke-width: 1.6;
 }
 
+.footer-related {
+  display: grid;
+  grid-template-columns: minmax(190px, 0.42fr) minmax(0, 1.58fr);
+  gap: clamp(28px, 5vw, 64px);
+  margin-top: clamp(38px, 6vw, 64px);
+  padding-top: clamp(32px, 5vw, 48px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-related-heading .footer-kicker {
+  color: #7bd4b6;
+}
+
+.footer-related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.footer-related-grid a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 13px;
+  align-items: center;
+  min-height: 88px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-related-grid a:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(123, 212, 182, 0.5);
+  transform: translateY(-2px);
+}
+
+.footer-related-grid a:focus-visible {
+  outline: 3px solid #7bd4b6;
+  outline-offset: 3px;
+}
+
+.footer-related-number {
+  align-self: start;
+  color: #7bd4b6;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.footer-related-copy {
+  display: grid;
+  gap: 3px;
+}
+
+.footer-related-copy strong {
+  font-size: 0.94rem;
+  line-height: 1.45;
+}
+
+.footer-related-copy small {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.footer-related-arrow {
+  color: rgba(255, 255, 255, 0.54);
+  font-size: 1.05rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-related-grid a:hover .footer-related-arrow {
+  color: #7bd4b6;
+  transform: translate(2px, -2px);
+}
+
 .footer-divider {
   height: 1px;
   margin: clamp(28px, 5vw, 42px) 0 22px;
@@ -724,6 +805,11 @@ code {
     max-width: 640px;
   }
 
+  .footer-related {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .footer-bottom {
     flex-direction: column;
   }
@@ -755,7 +841,8 @@ code {
   .content-grid,
   .workflow,
   .checklist,
-  .resource-grid {
+  .resource-grid,
+  .footer-related-grid {
     grid-template-columns: 1fr;
   }
 
